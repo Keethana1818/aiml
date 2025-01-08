@@ -1,0 +1,226 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "74291543-b9b9-4c83-8c1d-0e93b6cb5703",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "even\n"
+     ]
+    }
+   ],
+   "source": [
+    "num = 6 \n",
+    "if num %2 == 0:\n",
+    "    print(\"even\")\n",
+    "else:\n",
+    "    print(\"Odd\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "eb3028d7-67cd-455a-837d-83f35a04f5b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "odd\n"
+     ]
+    }
+   ],
+   "source": [
+    "num = 7\n",
+    "print(\"even\") if num % 2 == 0 else print(\"odd\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "95d7d722-e97d-4587-80c4-b413be59413e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Zero\n"
+     ]
+    }
+   ],
+   "source": [
+    "num = 0\n",
+    "result = \"Positive\" if num > 0 else (\"Negative\" if num < 0 else \"Zero\")\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "44e42ab7-5205-41c5-a288-8725e809c361",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 18, 4, 20, 112, 178]"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "L = [1,9,2,10,56,89]\n",
+    "[2*x for x in L]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "fffe0c54-303b-4cdf-b8a2-e8982837e464",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 10, 56]"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "L = [1,9,2,10,56,89]\n",
+    "[x for x in L if x%2 == 0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "34a92e67-3c02-4b69-a3ae-d0bde860f0c9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 9, 89]"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "L = [1,9,2,10,56,89]\n",
+    "[x for x in L if x%2 != 0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "f793b1f9-a3da-49de-a7b9-f6c3f44802b9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "27.833333333333332"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "L = [1,9,2,10,56,89]\n",
+    "avg = sum(L)/len(L)\n",
+    "avg"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "15fdfa44-30bc-42b8-8d4e-06478714c788",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Ram': [70, 71, 98, 100], 'john': [56, 49, 80, 90]}"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d1 = {'Ram':[70,71,98,100], 'john':[56,49,80,90]}\n",
+    "d1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "8a846b5a-b123-4b44-8755-9ac7e186b625",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Ram': 84.75, 'john': 68.75}"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "{k:sum(v)/len(v) for k,v in d1.items()}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bf9dce33-2b31-450d-a0d1-22e47b91ec2b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
